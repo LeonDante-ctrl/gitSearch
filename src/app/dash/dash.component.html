@@ -1,1 +1,40 @@
-<p>dash works!</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" routerLink="/">
+      <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fgithub.githubassets.com%2Fimages%2Fmodules%2Flogos_page%2FGitHub-Mark.png&imgrefurl=https%3A%2F%2Fgithub.com%2Flogos&tbnid=Kq4l3mSBVj08zM&vet=12ahUKEwjI9cv54rD1AhUSZPEDHcQcDBkQMygBegUIARDZAQ..i&docid=H8p6HHzcTglWAM&w=560&h=560&q=github%20icon&ved=2ahUKEwjI9cv54rD1AhUSZPEDHcQcDBkQMygBegUIARDZAQ" width="50" height="50" alt="logo">
+      {{ title }}
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/user">Search User Here</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/organization">Search Organization Here</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <div class="card text-center" style="margin-top: 20px">
+          <div class="card-body">
+            <a routerLink="user" class="btn btn-primary">Search User</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-xs-12 col-md-6">
+        <div class="card text-center" style="margin-top: 20px">
+          <div class="card-body">
+            <a routerLink="organization" class="btn btn-primary">Search Organisation Here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
