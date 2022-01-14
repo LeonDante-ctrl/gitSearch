@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
-import { GithubService } from './github-service';
+import { GithubServiceService } from './github-service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
@@ -25,7 +25,7 @@ import { TruncatePipe } from './truncate.pipe';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [GithubService],
+  providers: [GithubServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
